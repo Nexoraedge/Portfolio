@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik Jain - Developer Portfolio</title>
+    <link rel="stylesheet" href="portfoli.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="media.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Hardik's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="First" id="home">
+            <div class="F1left">Hello!! I am <span class="color">Hardik Jain</span>, I own <span class="color">Naxora
+                    Edge</span> and <div> I am a passionate </div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <button type="button" class="btn btn1" onclick="window.location.href='#contact'">Hire Me!</button>
+                </div>
+            </div>
+            <div class="F1right">
+                <img src="logo.png" alt="Logo" class="profile-img">
+            </div>
+        </section>
+        <hr>
+        <section class="about-me" id="about-me">
+            <h2>Who Am I?</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="bg-me.png" alt="Hardik Jain">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hardikjain1043/" class="social-link" target="_blank"
+                            rel="noopener">GitHub</a>
+                        <a href="https://x.com/NoBoDy_106_" class="social-link" target="_blank" rel="noopener">X</a>
+                        <a href="https://www.linkedin.com/in/hardikjain1043/" class="social-link" target="_blank"
+                            rel="noopener">LinkedIn</a>
+                        <a href="https://www.instagram.com/hardik.j_n/" class="social-link" target="_blank"
+                            rel="noopener">Instagram</a>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="bio">I'm a passionate tech enthusiast and aspiring Web developer based in India.
+                        With a strong foundation in C programming and a growing expertise in web development, I'm on a
+                        mission to create impactful digital solutions.
+                    </p>
+
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <h3>My Vision</h3>
+                            <p>To bridge the gap between local markets and the digital world by creating accessible and
+                                innovative web solutions that connect communities and empower growth.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>What Drives Me</h3>
+                            <p>The endless possibilities of creating something new from scratch and the satisfaction of
+                                solving complex problems through elegant code.</p>
+                        </div>
+                    </div>
+
+                    <div class="fun-fact">
+                        <h3>Fun Fact</h3>
+                        <p>When I'm not coding, you'll find me designing logos and editing videos - creativity flows
+                            through everything I do!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="Second">
+            <span class="text-gray"> What I have Learned so far </span>
+            <h1>Skills & Learnings</h1>
+            <div class="expbox">
+                <div class="box">
+                    <div class="vertical">
+                        <img class="imgtop" src="c.png" alt="">
+                        <div class="ver-title">C Programer</div>
+                        <div class="ver-desc">
+                            Writing efficient, reliable, and scalable code to solve
+                            problems and develop high-performance software solutions.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="imgtop" src="canva.png" alt="">
+                        <div class="ver-title">Logo Designer</div>
+                        <div class="ver-desc">
+                            Creating distinctive, memorable brand visuals by combining
+                            creativity, design expertise, and attention to detail.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="imgtop" src="website.png" alt="">
+                        <div class="ver-title">Web Developer</div>
+                        <div class="ver-desc">
+                            Writing efficient, reliable, and scalable code to solve
+                            problems and develop high-performance software solutions.
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="imgtop" src="ve.png" alt="">
+                        <div class="ver-title">Video Editing</div>
+                        <div class="ver-desc">
+                            Transforming raw footage into engaging, polished content
+                            through creativity, precision, and storytelling skills."
+                        </div>
+                    </div>
+                </div>
+                <div class="imgexp"><img src="pngegg.png" alt=""></div>
+            </div>
+        </section>
+        <hr>
+        <section class="projects" id="projects">
+            <span class="text-gray">My Recent Work</span>
+            <h1>Featured Projects</h1>
+
+            <div class="project-filters">
+                <button type="button" class="filter-btn active" data-category="all"
+                    onclick="filterProjects('all')">All</button>
+                <button type="button" class="filter-btn" data-category="web" onclick="filterProjects('web')">Web
+                    Dev</button>
+                <button type="button" class="filter-btn" data-category="programming"
+                    onclick="filterProjects('programming')">programming-c</button>
+                <button type="button" class="filter-btn" data-category="design"
+                    onclick="filterProjects('design')">Design</button>
+            </div>
+
+            <div class="project-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="spotify.png" alt="Spotify Clone">
+                        <div class="project-overlay">
+                            <a href="https://hardikjain1043.github.io/Project_Spotify/" class="project-link"
+                                target="_blank" rel="noopener">Live Demo</a>
+                            <a href="https://github.com/hardikjain1043/Project_Spotify" class="project-link"
+                                target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Spotify Clone</h3>
+                        <p>A fully responsive web app replicating Spotify's interface with custom song integration, smooth navigation, and enhanced responsiveness. Built using HTML, CSS, and JavaScript, it features interactive controls, optimized performance, and a user-friendly design</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" data-category="programming">
+                    <div class="project-image">
+                        <img src="Tic-tac.png" alt="Task Management App">
+                        <div class="project-overlay">
+                            <a href="https://www.jdoodle.com/ga/4OsBeHoBAVfnwsMBLADg3w%3D%3D" class="project-link">Live
+                                Demo</a>
+                            <a href="https://github.com/Nexoraedge/Tic-Tac-Toe" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>A classic Tic-Tac-Toe game built in C, offering single-player (vs. computer) and two-player modes. Features an intuitive interface, dynamic gameplay, and error handling for a seamless experience.</p>
+                    </div>
+                </div>
+
+                <!--                
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="project3.jpg" alt="Brand Identity">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                            <a href="#" class="project-link">Behance</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Brand Identity Design</h3>
+                        <p>Complete brand identity package including logo design, color palette, typography, and
+                            marketing materials.</p>
+                    </div>
+                </div>
+
+             
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="project4.jpg" alt="Catering Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Catering Website</h3>
+                        <p>Modern portfolio website built with HTML, CSS, and JavaScript. Features smooth animations and
+                            responsive design.</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="projects-cta">
+                <p>Interested in seeing more of my work?</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/Nexoraedge" class="cta-btn github-btn" target="_blank"
+                        rel="noopener">View GitHub Profile</a>
+                    <a href="#contact" class="cta-btn contact-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section class="services" id="services">
+            <span class="text-gray">What I Offer</span>
+            <h1>My Services</h1>
+
+            <p class="services-intro">Looking to bring your ideas online? I provide professional and customized web
+                development solutions tailored to your needs. Check out the services I offer below!</p>
+
+            <div class="services-grid">
+                <!-- Web Development Card -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites with responsive designs and modern features.</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price">₹8,000</span>
+                            <span class="type">one-time</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price">₹2,000</span>
+                            <span class="type">month maintenance</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-btn">Hire Me</a>
+                </div>
+
+                <!-- Portfolio Website Card -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>Personalized portfolios to showcase work and skills.</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price">₹5,000</span>
+                            <span class="type">one-time</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price">₹1,000</span>
+                            <span class="type">month updates</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-btn">Hire Me</a>
+                </div>
+
+                <!-- Website Redesign Card -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Website Redesign</h3>
+                    <p>Improve existing websites with better responsiveness, design, and functionality.</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price">₹4,000</span>
+                            <span class="type">one-time</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="service-btn">Hire Me</a>
+                </div>
+            </div>
+
+            <p class="services-note">Custom quotes are available for unique requirements. Feel free to contact me for
+                details!</p>
+        </section>
+        <hr>
+        <section class="contact" id="contact">
+            <span class="text-gray">Let's Connect</span>
+            <h1>Get In Touch</h1>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing Together!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        visions.</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:hardikjain2030@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>hardikjain2030@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nexora-edge/" class="contact-link" target="_blank"
+                            rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/Nexoraedge" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                        <a href="https://instagram.com/nexora_edge" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram Profile</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div class="email-form">
+                        <h3>Send Me a Message</h3>
+                        <p class="contact-desc">Write your message below and send it on WhatsApp or Instagram</p>
+                        <div class="form-group">
+                            <textarea id="whatsapp-message" placeholder="Write your message here..."
+                                rows="4"></textarea>
+                        </div>
+                        <div class="social-buttons">
+                            <button type="button" onclick="sendWhatsAppMessage()" class="whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i> Send on WhatsApp
+                            </button>
+                            <button type="button" onclick="sendInstagramMessage()" class="instagram-btn">
+                                <i class="fab fa-instagram"></i> Send on Instagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="1st">Hardik's Portfolio</div>
+            <div class="2nd">
+                <ul class="flex footli gap-1">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="textcenter">
+            Copyright &#169; www.Hardikportfolio.com | All right reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Logo Designer', 'C Programer', 'Video Editor', 'Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        function sendWhatsAppMessage() {
+            const message = document.getElementById('whatsapp-message').value;
+            if (!message) {
+                alert('Please write a message first!');
+                return;
+            }
+
+            // Replace with your actual WhatsApp number (with country code, no spaces or special characters)
+            const phoneNumber = '918271310911'; // Example: '919876543210' for India (+91)
+
+            // Encode the message for URL
+            const encodedMessage = encodeURIComponent(message);
+
+            // Create WhatsApp URL
+            const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+            // Open WhatsApp in new tab
+            window.open(whatsappURL, '_blank');
+
+            // Clear the textarea after sending
+            document.getElementById('whatsapp-message').value = '';
+        }
+
+        function sendInstagramMessage() {
+            const message = document.getElementById('whatsapp-message').value;
+            if (!message) {
+                alert('Please write a message first!');
+                return;
+            }
+
+            // Replace with your actual Instagram username
+            const instagramUsername = 'nexora_edge';
+
+            // Create Instagram DM URL
+            const instagramURL = `https://www.instagram.com/nexora_edge/direct/?text=${encodeURIComponent(message)}/`;
+
+            // Open Instagram DM in new tab
+            window.open(instagramURL, '_blank');
+
+            // As fallback, if direct message doesn't work, open profile
+            setTimeout(() => {
+                window.open(`https://www.instagram.com/${instagramUsername}`, '_blank');
+            }, 500);
+
+            // Clear the textarea after sending
+            document.getElementById('whatsapp-message').value = '';
+        }
+    </script>
+    <script>
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update active button
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-category') === category) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Filter projects
+            projects.forEach(project => {
+                if (category === 'all' || project.getAttribute('data-category') === category) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
