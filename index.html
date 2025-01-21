@@ -20,14 +20,21 @@
 
     <header>
         <nav>
-            <div class="left">Hardik's Portfolio</div>
+            <div class="left">Portfolio</div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="right">
-                <ul>
+                <ul class="nav-menu" id="nav-menu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about-me">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -98,15 +105,15 @@
                 <div class="box">
                     <div class="vertical">
                         <img class="imgtop" src="c.png" alt="">
-                        <div class="ver-title">C Programer</div>
+                        <div class="ver-title">Programming</div>
                         <div class="ver-desc">
                             Writing efficient, reliable, and scalable code to solve
-                            problems and develop high-performance software solutions.
+                            problems and develop high-performance software solutions.~
                         </div>
                     </div>
                     <div class="vertical">
                         <img class="imgtop" src="canva.png" alt="">
-                        <div class="ver-title">Logo Designer</div>
+                        <div class="ver-title">Logo Designing</div>
                         <div class="ver-desc">
                             Creating distinctive, memorable brand visuals by combining
                             creativity, design expertise, and attention to detail.
@@ -114,7 +121,7 @@
                     </div>
                     <div class="vertical">
                         <img class="imgtop" src="website.png" alt="">
-                        <div class="ver-title">Web Developer</div>
+                        <div class="ver-title">Web Developing</div>
                         <div class="ver-desc">
                             Writing efficient, reliable, and scalable code to solve
                             problems and develop high-performance software solutions.
@@ -162,7 +169,9 @@
                     </div>
                     <div class="project-info">
                         <h3>Spotify Clone</h3>
-                        <p>A fully responsive web app replicating Spotify's interface with custom song integration, smooth navigation, and enhanced responsiveness. Built using HTML, CSS, and JavaScript, it features interactive controls, optimized performance, and a user-friendly design</p>
+                        <p>A fully responsive web app replicating Spotify's interface with custom song integration,
+                            smooth navigation, and enhanced responsiveness. Built using HTML, CSS, and JavaScript, it
+                            features interactive controls, optimized performance, and a user-friendly design</p>
                     </div>
                 </div>
 
@@ -178,7 +187,9 @@
                     </div>
                     <div class="project-info">
                         <h3>Tic-Tac-Toe</h3>
-                        <p>A classic Tic-Tac-Toe game built in C, offering single-player (vs. computer) and two-player modes. Features an intuitive interface, dynamic gameplay, and error handling for a seamless experience.</p>
+                        <p>A classic Tic-Tac-Toe game built in C, offering single-player (vs. computer) and two-player
+                            modes. Features an intuitive interface, dynamic gameplay, and error handling for a seamless
+                            experience.</p>
                     </div>
                 </div>
 
@@ -372,6 +383,29 @@
         });
     </script>
     <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (hamburger && navMenu) {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            }
+        }
+
+        // Close menu when clicking a nav link
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    const hamburger = document.querySelector('.hamburger');
+                    const navMenu = document.querySelector('.nav-menu');
+                    if (hamburger && navMenu) {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    }
+                });
+            });
+        });
         function sendWhatsAppMessage() {
             const message = document.getElementById('whatsapp-message').value;
             if (!message) {

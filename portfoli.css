@@ -23,6 +23,7 @@ nav ul {
    display: flex;
    flex-direction: row;
    justify-content: center;
+   list-style: none;
 }
 
 nav ul li {
@@ -868,6 +869,54 @@ hr {
 
    .service-card {
       padding: 1.5rem;
+   }
+
+   .hamburger {
+      display: block;
+      cursor: pointer;
+   }
+
+   .right ul {
+      display: none;
+      position: fixed;
+      top: 9vh;
+      left: 0;
+      width: 100%;
+      background-color: rgb(2, 36, 77);
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0;
+      z-index: 1000;
+   }
+
+   .right ul.active {
+      display: flex;
+   }
+
+   nav ul li {
+      margin: 1rem 0;
+   }
+
+   .nav-menu {
+      display: none;
+      position: fixed;
+      top: 9vh;
+      left: 0;
+      width: 100%;
+      background-color: rgb(2, 36, 77);
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0;
+      z-index: 1000;
+   }
+
+   .nav-menu.active {
+      display: flex;
+   }
+
+   nav ul li {
+      margin: 1rem 0;
+      list-style: none;
    }
 }
 
