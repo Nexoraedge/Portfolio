@@ -423,9 +423,8 @@ hr {
    border-radius: 15px;
    overflow: hidden;
    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
-   transition: all 0.3s ease;
+   transition: transform 0.3s ease;
    opacity: 1;
-   transform: scale(1);
 }
 
 .project-card:hover {
@@ -1073,4 +1072,22 @@ hr {
 
 .whatsapp-btn i {
    font-size: 1.3rem;
+}
+
+/* Modify any flashy or intrusive animations */
+/* Ensure transitions are smooth and not abrupt */
+.project-card {
+   transition: transform 0.3s ease;
+   /* Use subtle transitions */
+}
+
+/* Avoid rapid blinking or flashing effects */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
 }

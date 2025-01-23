@@ -71,8 +71,12 @@ function validateMessage(message) {
 }
 
 function showError(message) {
-    // You can replace alert with a better UI notification
-    alert(message);
+    // Create a custom notification instead of alert
+    const notification = document.createElement('div');
+    notification.className = 'custom-notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    setTimeout(() => notification.remove(), 3000);
 }
 
 function sendWhatsAppMessage() {
