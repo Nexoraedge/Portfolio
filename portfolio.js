@@ -71,12 +71,24 @@ function validateMessage(message) {
 }
 
 function showError(message) {
-    // Create a custom notification instead of alert
     const notification = document.createElement('div');
     notification.className = 'custom-notification';
+    notification.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: rgba(0,0,0,0.8);
+        color: white;
+        border-radius: 5px;
+        z-index: 1000;
+    `;
     notification.textContent = message;
     document.body.appendChild(notification);
-    setTimeout(() => notification.remove(), 3000);
+    setTimeout(() => {
+        notification.style.opacity = '0';
+        setTimeout(() => notification.remove(), 300);
+    }, 3000);
 }
 
 function sendWhatsAppMessage() {
