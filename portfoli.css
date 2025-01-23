@@ -406,7 +406,8 @@ hr {
 }
 
 .filter-btn:hover {
-   background: rgba(255,255,255,0.1);
+   background: cyan;
+   color: rgb(2, 14, 31);
    transform: none;
 }
 
