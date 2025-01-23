@@ -394,16 +394,19 @@ hr {
 }
 
 .filter-btn {
-   background: transparent;
-   border: 1px solid #ccc;
+   background: none;
+   color: #ffffff;
+   border: 2px solid cyan;
    padding: 8px 15px;
    margin: 5px;
-   border-radius: 4px;
+   font-weight: 500;
+   font-size: 1.2rem;
+   border-radius: 7px;
    transition: background 0.2s ease;
 }
 
 .filter-btn:hover {
-   background: rgba(255, 255, 255, 0.1);
+   background: rgba(255,255,255,0.1);
    transform: none;
 }
 
