@@ -6,7 +6,15 @@
    scrollbar-width: 0px;
    font-family: 'Poppins', sans-serif;
 }
+::-webkit-scrollbar {
+   display: none;
+}
 
+/* Ensure scrolling still works */
+body {
+   overflow: hidden;
+   overflow-y: scroll; /* Enables scrolling */
+}
 body , html {
    background-color: rgb(2, 14, 31);
    color: azure;
