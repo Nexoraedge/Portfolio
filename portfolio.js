@@ -58,6 +58,12 @@
 //         });
 // }
 
+AOS.init({
+    duration: 1000,  // duration of animation
+    once: true,      // animation occurs only once
+    offset: 100      // offset (in px) from the original trigger point
+});
+
 function validateMessage(message) {
     if (!message.trim()) {
         showError('Please write a message first!');

@@ -6,7 +6,7 @@
    font-family: 'Poppins', sans-serif;
 }
 
-body {
+body , html {
    background-color: rgb(2, 14, 31);
    color: azure;
 }
@@ -391,6 +391,10 @@ hr {
    justify-content: center;
    gap: 1rem;
    margin-bottom: 3rem;
+}
+::-webkit-scrollbar{
+background: none;
+width: 0px;
 }
 
 .filter-btn {

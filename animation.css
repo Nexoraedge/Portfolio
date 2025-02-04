@@ -1,0 +1,31 @@
+.autoshown{
+ animation: autoShow both;
+ animation-timeline: view(70% 5%);
+}
+ 
+@keyframes autoShow {
+    from{
+        opacity: 0;
+        transform:  scale(0.3);
+    }
+    to{
+        opacity: 100;
+        transform:  scale(1);
+    }
+}
+
+.autoblur{
+    animation: autoBlur both;
+    animation-timeline: view();
+}
+
+@keyframes autoBlur{
+    0%, 
+    100%{
+    filter: blur(10px); 
+    }
+    45% , 
+    55%{
+ filter: blur(0);
+    }
+}
